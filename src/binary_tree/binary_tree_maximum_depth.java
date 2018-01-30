@@ -1,5 +1,5 @@
-package binary_tree_maximum_depth;
-public class Main {
+package binary_tree;
+public class binary_tree_maximum_depth {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
