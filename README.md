@@ -1,4 +1,4 @@
-# leetcode¡∑œ∞
+# leetcode practice content
 
 ## Array
 best_time_to_buy_and_sell_stock
@@ -18,6 +18,8 @@ populating_next_right_pointers_in_each_node
 
 unique_binary_search_trees
 
+balanced_binary_tree
+
 ## Complexity
 reverseInteger
 
@@ -25,6 +27,8 @@ singleNumber
 
 ## dynamicProgramming
 climbing_stairs
+
+uniquePaths
 
 ## greedy
 
@@ -40,3 +44,4 @@ palindromeNumber
 search_insert_position
 ## String
 integer_to_roman
+romanToInt
