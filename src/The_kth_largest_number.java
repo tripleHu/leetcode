@@ -3,7 +3,7 @@ public class The_kth_largest_number {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int a[] = { 6, 2, 8, 0 };
-		int k = 2;// µÚ2´óµÄÊı
+		int k = 2;// ç¬¬2å¤§çš„æ•°
 		
 		System.out.println(findK(a, 0, 3, k));
 	}
@@ -27,12 +27,12 @@ public class The_kth_largest_number {
 		
 
 			while (i < j) {
-				while (i < j && s[j] >= x) // ´ÓÓÒÏò×óÕÒµÚÒ»¸öĞ¡ÓÚxµÄÊı
+				while (i < j && s[j] >= x) // ä»å³å‘å·¦æ‰¾ç¬¬ä¸€ä¸ªå°äºxçš„æ•°
 					j--;
 				if (i < j)
 					s[i++] = s[j];
 
-				while (i < j && s[i] <= x) // ´Ó×óÏòÓÒÕÒµÚÒ»¸ö´óÓÚµÈÓÚxµÄÊı
+				while (i < j && s[i] <= x) // ä»å·¦å‘å³æ‰¾ç¬¬ä¸€ä¸ªå¤§äºç­‰äºxçš„æ•°
 					i++;
 				if (i < j)
 					s[j--] = s[i];

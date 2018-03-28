@@ -32,16 +32,16 @@ public class linked_list_cycle {
 		return false;
 		
 	}
-	//¿ìÂıÖ¸ÕëÄÜÏàÓöËµÃ÷ÓĞ»·£¡ÈçÁ½¸öÈËÅÜÈ¦
+	//å¿«æ…¢æŒ‡é’ˆèƒ½ç›¸é‡è¯´æ˜æœ‰ç¯ï¼å¦‚ä¸¤ä¸ªäººè·‘åœˆ
 	public static boolean hasCycle(ListNode head) {
 		if (head == null)
 			return false;
 		ListNode fast = head;
 		ListNode slow = head;
 		while (fast.next != null && fast.next.next != null) {
-			//¿ìÖ¸ÕëÔÚÇ°£¬Ã¿´ÎÇ°½øÁ½²½,ÒòÎªÊÇÀëÉ¢µÄ£¬ËùÒÔ¿ìÖ¸ÕëËÙ¶È±ØĞë±ÈÂıÖ¸Õë´ó1£¬Èç£¨2£¬1£©»ò£¨3£¬2£©
+			//å¿«æŒ‡é’ˆåœ¨å‰ï¼Œæ¯æ¬¡å‰è¿›ä¸¤æ­¥,å› ä¸ºæ˜¯ç¦»æ•£çš„ï¼Œæ‰€ä»¥å¿«æŒ‡é’ˆé€Ÿåº¦å¿…é¡»æ¯”æ…¢æŒ‡é’ˆå¤§1ï¼Œå¦‚ï¼ˆ2ï¼Œ1ï¼‰æˆ–ï¼ˆ3ï¼Œ2ï¼‰
 			fast = fast.next.next;
-			//ÂıÖ¸ÕëÔÚºó£¬Ã¿´ÎÇ°½øÒ»²½£¨ÓÉÓÚ¿ìÖ¸ÕëÒÑ¾­ÅĞ¶Ï¹ı£¬ÎŞĞèÔÙÅĞ¶Ïslow.next != null£©
+			//æ…¢æŒ‡é’ˆåœ¨åï¼Œæ¯æ¬¡å‰è¿›ä¸€æ­¥ï¼ˆç”±äºå¿«æŒ‡é’ˆå·²ç»åˆ¤æ–­è¿‡ï¼Œæ— éœ€å†åˆ¤æ–­slow.next != nullï¼‰
 			slow = slow.next;
 			if (fast == slow)
 				return true;

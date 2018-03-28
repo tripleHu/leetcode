@@ -14,7 +14,7 @@ public class populating_next_right_pointers_in_each_node {
 		t.right = t3;
 		connect(t);
 	}
-	//Ê¹ÓÃ²ãĞò±éÀú£¬ÔÚ¸ù½ÚµãºóÑ¹ÈëNULL½Úµã±íÊ¾Ò»²ã½áÊø£¬µ±ÒÔºóÃ¿·ÃÎÊµ½NULL½ÚµãÊ±£¬ËµÃ÷µ±Ç°²ãÒÑ¾­±éÀúÍê±Ï
+	//ä½¿ç”¨å±‚åºéå†ï¼Œåœ¨æ ¹èŠ‚ç‚¹åå‹å…¥NULLèŠ‚ç‚¹è¡¨ç¤ºä¸€å±‚ç»“æŸï¼Œå½“ä»¥åæ¯è®¿é—®åˆ°NULLèŠ‚ç‚¹æ—¶ï¼Œè¯´æ˜å½“å‰å±‚å·²ç»éå†å®Œæ¯•
 	public static void connect(TreeLinkNode root) {
 		if(root==null)return;  
         Queue<TreeLinkNode> q=new LinkedList<TreeLinkNode>();  

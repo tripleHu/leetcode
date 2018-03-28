@@ -40,8 +40,13 @@ linked_list_cycle
 
 ## mathematics
 palindromeNumber
+
 ## search
 search_insert_position
+
+GenerateParenthesis
+
 ## String
 integer_to_roman
+
 romanToInt

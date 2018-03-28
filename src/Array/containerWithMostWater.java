@@ -10,7 +10,7 @@ public class containerWithMostWater {
 	}
 	public static int MaxArea(int [] height){
 		int MaxArea = 0;
-		//暴力求解，时间复杂度为O(n^2)
+		//鏆村姏姹傝В锛屾椂闂村鏉傚害涓篛(n^2)
 		/*for(int i = 0; i < height.length; i++){
 			for(int j =i; j < height.length; j++){
 				int AreaHeight = height[i] < height[j] ? height[i] : height[j];
@@ -18,7 +18,7 @@ public class containerWithMostWater {
 				MaxArea = Area > MaxArea ? Area : MaxArea;
 			}
 		}*/
-		//贪心算法
+		//璐績绠楁硶
 		int l = 0; int r = height.length -1;
 		while(l < r){
 			int AreaHeight = height[l] < height[r] ? height[l] : height[r];

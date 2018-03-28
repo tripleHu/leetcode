@@ -21,31 +21,31 @@ public class rotate_image {
 		}
 	}
 	/**
-	 * Ò»²ã²ãĞı×ª
+	 * ä¸€å±‚å±‚æ—‹è½¬
 	 * | - - - - -  |
 	 * | |          | |
 	 * | |          | |
 	 * | |          | |
 	 * | - - - - - | 
-	 * È·¶¨Ã¿¸öÔªËØĞı×ªºóµÄ±í´ïÊ½
+	 * ç¡®å®šæ¯ä¸ªå…ƒç´ æ—‹è½¬åçš„è¡¨è¾¾å¼
 	 * n = matrix.length - 1 ;
-	 * matrix[i][j]ÔªËØĞı×ª90¶ÈºóµÄÎ»ÖÃÎªmatrix[j][n-i],¼´Ğı×ªºóµÄĞĞ£¬ÎªĞı×ªÇ°µÄÁĞ£¬Ğı×ªºóµÄÁĞ£¬Îªn¼õÈ¥Ğı×ªÇ°µÄĞĞ
-	 * Èı´Î½»»»¿ÉÒÔÍê³ÉËÄ¸öÔªËØµÄĞı×ª
+	 * matrix[i][j]å…ƒç´ æ—‹è½¬90åº¦åçš„ä½ç½®ä¸ºmatrix[j][n-i],å³æ—‹è½¬åçš„è¡Œï¼Œä¸ºæ—‹è½¬å‰çš„åˆ—ï¼Œæ—‹è½¬åçš„åˆ—ï¼Œä¸ºnå‡å»æ—‹è½¬å‰çš„è¡Œ
+	 * ä¸‰æ¬¡äº¤æ¢å¯ä»¥å®Œæˆå››ä¸ªå…ƒç´ çš„æ—‹è½¬
 	 * @param matrix
 	 */
 	public static void rotate(int[][] matrix) {
         int n = matrix.length - 1 ;
 		for(int i = 0, r = n; i < n; i++, r--){
 			for(int j = i; j < r; j++){
-				//Ê¹ÓÃÒì»ò½»»»Á½¸öÔªËØµÄÖµ
+				//ä½¿ç”¨å¼‚æˆ–äº¤æ¢ä¸¤ä¸ªå…ƒç´ çš„å€¼
 				matrix[i][j] = matrix[i][j] ^ matrix[j][n - i];
 				matrix[j][n - i] = matrix[i][j] ^ matrix[j][n - i];
 				matrix[i][j] = matrix[i][j] ^ matrix[j][n - i];
-				//Ê¹ÓÃÒì»ò½»»»Á½¸öÔªËØµÄÖµ
+				//ä½¿ç”¨å¼‚æˆ–äº¤æ¢ä¸¤ä¸ªå…ƒç´ çš„å€¼
 				matrix[i][j] = matrix[i][j] ^ matrix[n - i][n - j];
 				matrix[n - i][n - j] = matrix[i][j] ^ matrix[n - i][n - j];
 				matrix[i][j] = matrix[i][j] ^ matrix[n - i][n - j];
-				//Ê¹ÓÃÒì»ò½»»»Á½¸öÔªËØµÄÖµ
+				//ä½¿ç”¨å¼‚æˆ–äº¤æ¢ä¸¤ä¸ªå…ƒç´ çš„å€¼
 				matrix[i][j] = matrix[i][j] ^ matrix[n - j][i];
 				matrix[n - j][i] = matrix[i][j] ^ matrix[n - j][i];
 				matrix[i][j] = matrix[i][j] ^ matrix[n - j][i];

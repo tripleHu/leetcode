@@ -6,13 +6,13 @@ public class uniquePaths {
 		// TODO Auto-generated method stub
 		System.out.println(uniquePaths(30,30));
 	}
-	public static int uniquePaths1(int m, int n) {//µİ¹éĞ´·¨£¬¼ÆËãÊ±¼ä¹ı³¤£¬²»ÍÆ¼ö
+	public static int uniquePaths1(int m, int n) {//é€’å½’å†™æ³•ï¼Œè®¡ç®—æ—¶é—´è¿‡é•¿ï¼Œä¸æ¨è
         if(m <= 1 || n <= 1) return 1;
         int res1 = uniquePaths(m, n - 1);
         int res2 = uniquePaths(m - 1, n);
         return res1 + res2;
     }
-	public static int uniquePaths(int m, int n) {//¶¯Ì¬¹æ»®Ğ´·¨
+	public static int uniquePaths(int m, int n) {//åŠ¨æ€è§„åˆ’å†™æ³•
 		
         if(m <= 1 || n <= 1) return 1;
         int res[][] = new int [m][n];
@@ -29,10 +29,10 @@ public class uniquePaths {
 		}
 		return res[m - 1][n - 1];
     }
-	public static int uniquePaths2(int m, int n) {//ÅÅÁĞ×éºÏË¼Ïë,C++¿ÉÒÔ£¬µ«Java»á³ö´í
-	    long x = m+n-2;  //²»ÓÃlong»áÒç³ö£¬½×³ËÇó³öÀ´Ì«´óÁË
+	public static int uniquePaths2(int m, int n) {//æ’åˆ—ç»„åˆæ€æƒ³,C++å¯ä»¥ï¼Œä½†Javaä¼šå‡ºé”™
+	    long x = m+n-2;  //ä¸ç”¨longä¼šæº¢å‡ºï¼Œé˜¶ä¹˜æ±‚å‡ºæ¥å¤ªå¤§äº†
 	    long y = Math.min(m,n)-1;
-	    long up = 1,down =1;   //×îºóÇó×éºÏÊıµÄ·Ö×Ó/·ÖÄ¸
+	    long up = 1,down =1;   //æœ€åæ±‚ç»„åˆæ•°çš„åˆ†å­/åˆ†æ¯
 	    if(m==1||n==1) return 1;
 	    for(int i = 0;i<y ;i++){
 	        up *= x--;

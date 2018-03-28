@@ -12,8 +12,8 @@ public class balanced_binary_tree {
         if(root == null){
             return true;
         }
-        if(isBalanced(root.left) && isBalanced(root.right)){//判断左子树和右子树是否都是一颗平衡二叉树
-            if(Math.abs(ChildDepth(root.left) - ChildDepth(root.right)) <= 1){//它的左子树和右子树的深度之差(平衡因子)的绝对值不超过1
+        if(isBalanced(root.left) && isBalanced(root.right)){//鍒ゆ柇宸﹀瓙鏍戝拰鍙冲瓙鏍戞槸鍚﹂兘鏄竴棰楀钩琛′簩鍙夋爲
+            if(Math.abs(ChildDepth(root.left) - ChildDepth(root.right)) <= 1){//瀹冪殑宸﹀瓙鏍戝拰鍙冲瓙鏍戠殑娣卞害涔嬪樊(骞宠　鍥犲瓙)鐨勭粷瀵瑰�间笉瓒呰繃1
                 return true;
             }
             else{
