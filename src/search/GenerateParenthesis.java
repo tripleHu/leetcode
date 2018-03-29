@@ -5,8 +5,9 @@ import java.util.ArrayList;
 public class GenerateParenthesis {
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
-		ArrayList<String> arrayList = generateParenthesis(1);
+		ArrayList<String> arrayList = generateParenthesis(5);
 		for (String string : arrayList) {
 			System.out.println(string);
 		}

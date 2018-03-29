@@ -20,6 +20,8 @@ unique_binary_search_trees
 
 balanced_binary_tree
 
+SameTree
+
 ## Complexity
 reverseInteger
 
